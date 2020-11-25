@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	log.Print("Hello world received a request.")
 	target := os.Getenv("TARGET")
 	if target == "" {
-		target = "Google Cloud Run"
+		target = "WindowsROOT on CloudRun"
 	}
 	fmt.Fprintf(w, "Hello %s!\n", target)
 }
